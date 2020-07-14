@@ -6,4 +6,5 @@ spec_task:
     fingerprint_script: cat shard.lock
     populate_script: shards install
     folder: ~/.cache/shards
+  install_script: shards install # always install to populate work dir cache
   spec_script: crystal spec
