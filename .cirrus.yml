@@ -1,0 +1,9 @@
+container:
+  image: crystallang/crystal:latest
+
+spec_task:
+  shard_cache:
+    fingerprint_script: cat shart.lock
+    populate_script: shards install
+    folder: ~/.cache/shards
+  spec_script: crystal spec
