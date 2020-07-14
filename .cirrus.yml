@@ -3,7 +3,7 @@ container:
 
 spec_task:
   shard_cache:
-    fingerprint_script: cat shart.lock
+    fingerprint_script: cat shard.lock
     populate_script: shards install
     folder: ~/.cache/shards
   spec_script: crystal spec
